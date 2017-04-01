@@ -1,3 +1,4 @@
+
 /*
  * 	NET3	Protocol independent device support routines.
  *
@@ -345,9 +346,7 @@ static inline void netdev_set_addr_lockdep_class(struct net_device *dev)
 #endif
 
 /*******************************************************************************
-
 		Protocol management and registration routines
-
 *******************************************************************************/
 
 /*
@@ -526,9 +525,7 @@ void dev_remove_offload(struct packet_offload *po)
 EXPORT_SYMBOL(dev_remove_offload);
 
 /******************************************************************************
-
 		      Device Boot-time Settings Routines
-
 *******************************************************************************/
 
 /* Boot time configuration table */
@@ -651,9 +648,7 @@ int __init netdev_boot_setup(char *str)
 __setup("netdev=", netdev_boot_setup);
 
 /*******************************************************************************
-
 			    Device Interface Subroutines
-
 *******************************************************************************/
 
 /**
@@ -2994,13 +2989,11 @@ static int __dev_queue_xmit(struct sk_buff *skb, void *accel_priv,
 
 	/* The device has no queue. Common case for software devices:
 	   loopback, all the sorts of tunnels...
-
 	   Really, it is unlikely that netif_tx_lock protection is necessary
 	   here.  (f.e. loopback and IP tunnels are clean ignoring statistics
 	   counters.)
 	   However, it is possible, that they rely on protection
 	   made by us here.
-
 	   Check this and shot the lock. It is not prone from deadlocks.
 	   Either shot noqueue qdisc, it is even simpler 8)
 	 */
@@ -7007,7 +7000,6 @@ int dev_change_net_namespace(struct net_device *dev, struct net *net, const char
 
 	/* Notify protocols, that we are about to destroy
 	   this device. They should clean all the things.
-
 	   Note that dev->reg_state stays at NETREG_REGISTERED.
 	   This is wanted because this way 8021q and macvlan know
 	   the device is just moving and can keep their slaves up.
