@@ -77,5 +77,5 @@ TRACE_EVENT(
 
 /* This part must be outside protection */
 #undef TRACE_INCLUDE_PATH
-#define TRACE_INCLUDE_PATH .
+#define TRACE_INCLUDE_PATH /home/cherrug/Desktop/roba-kernel/CherrugKernel/drivers/net/ethernet/msm
 #include <trace/define_trace.h>
