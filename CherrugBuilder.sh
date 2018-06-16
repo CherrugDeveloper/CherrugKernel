@@ -30,7 +30,7 @@ echo -e "***********************************************$nocol"
 make clean && make mrproper
 make x2_defconfig
 make -j24
-if ! [ -a $ZIMAGE ];
+if ! [ $ZIMAGE ];
 then
 echo -e "$Red Kernel Compilation failed! Fix the errors! $nocol"
 exit 1
